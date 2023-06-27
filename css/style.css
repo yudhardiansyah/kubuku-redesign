@@ -40,6 +40,19 @@ body a {
   width: 250px;
 }
 
+.btn {
+  font-size: 14px;
+}
+
+.btn-orange {
+  background-color: #ff512f;
+  color: #ffffff;
+}
+
+.btn-orange:hover {
+  background-color: #e44c2e;
+  color: #ffffff;
+}
 .bg-gradient-style {
   padding: 32px;
   background: radial-gradient(33.4% 53.21% at 0% 0%, #f09819 0%, rgba(161, 207, 126, 0) 100%), radial-gradient(100% 159.29% at 100% 100%, #f09819 0%, rgba(161, 207, 126, 0) 59.31%), #ff512f;
@@ -1091,16 +1104,16 @@ div.dataTables_wrapper div.dataTables_paginate {
   border-color: #f9f9f9;
   color: #5e6278;
   font-size: 14px;
-  border-radius: 8px;
+  border-radius: 8px !important;
   transition: color 0.2s ease;
   -webkit-transition: color 0.2s ease;
   -moz-transition: color 0.2s ease;
   -ms-transition: color 0.2s ease;
   -o-transition: color 0.2s ease;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
+  -webkit-border-radius: 8px !important;
+  -moz-border-radius: 8px !important;
+  -ms-border-radius: 8px !important;
+  -o-border-radius: 8px !important;
 }
 
 .form-control:focus {
@@ -1113,6 +1126,32 @@ div.dataTables_wrapper div.dataTables_paginate {
   -ms-transition: color 0.2s ease;
   -o-transition: color 0.2s ease;
   box-shadow: none;
+}
+
+.select2-container--default .select2-selection--single {
+  border-radius: 0.475rem;
+  -webkit-border-radius: 0.475rem;
+  -moz-border-radius: 0.475rem;
+  -ms-border-radius: 0.475rem;
+  -o-border-radius: 0.475rem;
+}
+
+.select2-container .select2-selection--single {
+  height: 44px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #444;
+  line-height: 44px;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+  padding-left: 12px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  top: 10px;
+  right: 8px;
 }
 
 /* ======== MOBILE RESPONSIVE ======== */
@@ -1281,5 +1320,15 @@ div.dataTables_wrapper div.dataTables_paginate {
     -moz-border-radius: 24px;
     -ms-border-radius: 24px;
     -o-border-radius: 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  div.dataTables_wrapper div.dataTables_filter {
+    width: 100%;
+    text-align: left;
+  }
+  div.dataTables_wrapper div.dataTables_filter input {
+    margin-left: 0;
   }
 }
