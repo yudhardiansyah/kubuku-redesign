@@ -1154,6 +1154,14 @@ div.dataTables_wrapper div.dataTables_paginate {
   right: 8px;
 }
 
+.select2-container--default .select2-selection--single {
+  border-color: #dbdfe9;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: #ff512f;
+}
+
 /* ======== MOBILE RESPONSIVE ======== */
 @media (max-width: 768px) {
   .navbar-toggler {
